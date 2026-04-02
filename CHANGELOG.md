@@ -1,3 +1,7 @@
+## 2.0.7
+
+* Added Swift Package Manager support
+
 ## 2.0.6+1
 
 * Updated documentation and sample usage
