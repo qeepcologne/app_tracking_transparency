@@ -3,12 +3,12 @@ import UIKit
 import AppTrackingTransparency
 import AdSupport
 
-public class SwiftAppTrackingTransparencyPlugin: NSObject, FlutterPlugin {
+public class AppTrackingTransparencyPlugin: NSObject, FlutterPlugin {
   private var observer: NSObjectProtocol?
   
   public static func register(with registrar: FlutterPluginRegistrar) {
     let channel = FlutterMethodChannel(name: "app_tracking_transparency", binaryMessenger: registrar.messenger())
-    let instance = SwiftAppTrackingTransparencyPlugin()
+    let instance = AppTrackingTransparencyPlugin()
     registrar.addMethodCallDelegate(instance, channel: channel)
   }
 
